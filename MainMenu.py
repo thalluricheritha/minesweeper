@@ -145,10 +145,10 @@ class MainMenu:
             self.hard_button.pack()
             self.extreme_button.pack()
 
-            self.normal_button.place(bordermode=OUTSIDE, x=250, y=350)
-            self.hard_button.place(bordermode=OUTSIDE, x=250, y=450)
-            self.extreme_button.place(bordermode=OUTSIDE, x=250, y=550)
-            self.select_difficulty_label.place(bordermode=OUTSIDE, x=150, y=250)
+            self.normal_button.place(bordermode=OUTSIDE, x=280, y=350)
+            self.hard_button.place(bordermode=OUTSIDE, x=280, y=450)
+            self.extreme_button.place(bordermode=OUTSIDE, x=280, y=550)
+            self.select_difficulty_label.place(bordermode=OUTSIDE, x=165, y=250)
 
 
     #
@@ -184,5 +184,6 @@ class MainMenu:
             self.title_label.destroy()
             self.normal_button.destroy()
             self.hard_button.destroy()
+            self.extreme_button.destroy()
             self.select_difficulty_label.destroy()
         
