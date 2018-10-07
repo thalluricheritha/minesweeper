@@ -212,4 +212,8 @@ class View:
     #
     # ─── FUNCTION TO DESTROY ALL TKINTER COMPONENTS AND RETURN TO MENU ──────────────
     #
-   
+    def cleanup(self):
+        self.canvas.destroy()
+        self.menubar.destroy()
+        self.frame.destroy()
+        self.frame.quit()
