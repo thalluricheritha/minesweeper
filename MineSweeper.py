@@ -48,11 +48,7 @@ class Minesweeper:
                 self.game_settings['game_size']
             );
 
-            self.game_controller = GameController(self.game_board)
-
-            self.view = View(self.game_board, self.game_controller, self.root, self.game_settings)
-            self.root.mainloop()
-            
+           
 
         #
         # ─── CREATE GAME WITH SETTINGS ───────────────────────────────────
