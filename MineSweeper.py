@@ -19,8 +19,8 @@ class Minesweeper:
         # ─── DECLARE GAME SETTINGS ───────────────────────────────────────
         #
         self.game_settings = {}
-        self.game_settings['window_dimension'] = 680
-        self.game_settings['tile_dimension'] = 44
+        self.game_settings['window_dimension'] = 720
+        self.game_settings['tile_dimension'] = 46
 
         #
         # ─── CREATE ROOT WINDOW ──────────────────────────────────────────
