@@ -39,7 +39,17 @@ class PositionService:
 
         #
         # ─── DETERMINE IF POINT IS ABOVE HEXAGONS TOP EDGES ──────────────
-        
+        if rel_y < (-gradient * rel_x + c):
+            row -= 1
+            if not odd_row:
+                column -= 1
+        elif rel_y < (gradient * rel_x - c):
+            row -= 1
+            if odd_row:
+                column += 1
+
+        return [row, column]
+
 
             
 
