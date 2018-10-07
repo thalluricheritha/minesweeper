@@ -201,10 +201,10 @@ restart_button = Button(menu_frame, text="Restart")
 restart_button.grid(row=0)
 
 menu_button = Button(menu_frame, text="Main Menu")
-menu_button.grid(row=0, column=2)
+menu_button.grid(row=0, column=1)
 
 quit_button = Button(menu_frame, text="Quit", command=lambda x=1: quit(x))
-quit_button.grid(row=0, column=1)
+quit_button.grid(row=0, column=2)
 
 # Add Top Frame with
 
