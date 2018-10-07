@@ -166,4 +166,24 @@ class Board:
 #
 # ─── GETTERS ────────────────────────────────────────────────────────────────────
 #
-    
+    def get_state_toggles(self):
+        return self.toggles
+
+    def get_state_button_numbers(self):
+        return self.button_numbers
+
+    def get_state_board_type(self):
+        return self.board_type
+
+    def get_state_loss(self):
+        return self.game_over
+
+    def get_state_mines(self):
+        return self.mines
+
+    def get_state_covers(self):
+        return self.covers
+
+    def get_state_win(self):
+        self.cover_match()
+        return self.game_win
