@@ -183,7 +183,7 @@ class View:
     # ─── DETERMINE POSITION FOR HEXAGONAL TILE ──────────────────────────────────────
     def place_tile_hex(self, i, j, image, text=0):
         img_dimension = 46
-        base_pos_y = j * (img_dimension * 0.75)
+        base_pos_y = j * (img_dimension * 0.65)
         if j % 2 == 1:
             base_pos_x = i * img_dimension + (img_dimension / 2)
         else:
@@ -195,7 +195,7 @@ class View:
         self.canvas.create_image(pos_x, pos_y, anchor=NW, image=image, tags="tile");
         if text != 0:
             if text != "zero":    
-                self.canvas.create_text(pos_x + 22.5, pos_y + 22.5, text=text)
+                self.canvas.create_text(pos_x + 24.5, pos_y + 24.5, text=text)
 
 
     def draw_mines(self):
