@@ -4,7 +4,7 @@ class PositionService:
         print("PS MODE: ", mode)
         self.mode = mode
         self.tile_dimension = tile_dimension
-        self.row_height = tile_dimension * 0.65
+        self.row_height = tile_dimension * 0.75
     
     def calculate_coordinates(self, x, y):  
         if self.mode == "SQUARE":
@@ -33,7 +33,7 @@ class PositionService:
         #
         # ─── CALCULATE THE GRADIENT OF THE TOP EDGES ─────────────────────
         #
-        c = self.tile_dimension * 0.35
+        c = self.tile_dimension * 0.25
         gradient = c / (self.tile_dimension / 2)
         
 
